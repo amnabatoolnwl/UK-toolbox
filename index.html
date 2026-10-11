@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UK ToolBox - Free Online Tools</title>
+
+    <meta name="description"
+        content="Use free online tools including a word counter, date calculator and UK salary estimator.">
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h2>UK ToolBox</h2>
+        <a href="#tools">Explore Free Tools</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Smart Tools for Everyday Life</h1>
+
+        <p>
+            Free, simple and useful online tools for everyone in the UK.
+        </p>
+
+        <input
+            class="search"
+            id="search"
+            type="text"
+            placeholder="Search for a tool..."
+            aria-label="Search tools"
+        >
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools" id="tools">
+
+        <!-- Word Counter -->
+        <div class="card" data-name="word counter">
+            <div class="emoji">📝</div>
+            <h3>Word Counter</h3>
+            <p>Count words and characters in your text.</p>
+            <button onclick="openTool('words')">
+                Open Tool
+            </button>
+        </div>
+
+        <!-- Date Calculator -->
+        <div class="card" data-name="date calculator">
+            <div class="emoji">📅</div>
+            <h3>Date Calculator</h3>
+            <p>Calculate the days between two dates.</p>
+            <button onclick="openTool('dates')">
+                Open Tool
+            </button>
+        </div>
+
+        <!-- UK Salary Calculator -->
+        <div class="card" data-name="salary calculator">
+            <div class="emoji">💷</div>
+            <h3>UK Salary Calculator</h3>
+            <p>Estimate your yearly take-home pay.</p>
+            <button onclick="openTool('salary')">
+                Open Tool
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Selected Tool Appears Here -->
+    <section id="tool-area"></section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 UK ToolBox | Simple Tools, Smarter Life</p>
+    </footer>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+
+</body>
+</html>
